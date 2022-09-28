@@ -1,3 +1,6 @@
+import Personnes.Chef;
+import Personnes.Padawan;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -8,9 +11,10 @@ public class Main {
         ArrayList<Padawan> padawanList = new ArrayList<>();
         padawanList.add(p1);
 
-        c1.setPadawan(padawanList);
         p1.setChef(c1);
+        c1.setPadawan(padawanList);
 
-        System.out.println(p1);
+
+        System.out.println(p1.toString());
     }
 }

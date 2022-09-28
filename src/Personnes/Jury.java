@@ -1,3 +1,5 @@
+package Personnes;
+
 public class Jury extends Personne {
     private int nombreParticipations;
 

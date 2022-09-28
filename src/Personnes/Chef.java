@@ -1,3 +1,5 @@
+package Personnes;
+
 import java.util.ArrayList;
 
 public class Chef extends Personne {
@@ -47,13 +49,10 @@ public class Chef extends Personne {
 
     @Override
     public String toString() {
-        return "Chef{" +
-                "Nom" + getNom() +
-                "Prenom" + getPrenom() +
-                "etoiles=" + etoiles +
+        return "chef=" + super.toString() +
+                ", etoiles=" + etoiles +
                 ", specialites=" + specialites +
                 ", plats=" + plats +
-                ", padawan=" + padawan +
                 '}';
     }
 }

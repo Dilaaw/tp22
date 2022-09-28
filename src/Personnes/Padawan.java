@@ -1,3 +1,5 @@
+package Personnes;
+
 public class Padawan extends Personne{
     private Chef chef;
 
@@ -16,7 +18,8 @@ public class Padawan extends Personne{
     @Override
     public String toString() {
         return "Padawan{" +
-                "chef=" + chef +
+                super.toString() +
+                "chef=" + getChef() +
                 '}';
     }
 }
