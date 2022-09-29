@@ -1,9 +1,9 @@
-package Personnes;
+package personnes;
 
 public class Padawan extends Personne{
     private Chef chef;
 
-    public Padawan(int id, String nom, String prenom, int age, String genre, int telephone) {
+    public Padawan(int id, String nom, String prenom, int age, Genre genre, String telephone) {
         super(id, nom, prenom, age, genre, telephone);
     }
 

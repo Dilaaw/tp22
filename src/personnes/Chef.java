@@ -1,4 +1,4 @@
-package Personnes;
+package personnes;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Chef extends Personne {
     private ArrayList<String> plats;
     private ArrayList<Padawan> padawan;
 
-    public Chef(int id, String nom, String prenom, int age, String genre, int telephone, int etoiles, ArrayList<String> specialites, ArrayList<String> plats) {
+    public Chef(int id, String nom, String prenom, int age, Genre genre, String telephone, int etoiles, ArrayList<String> specialites, ArrayList<String> plats) {
         super(id, nom, prenom, age, genre, telephone);
         this.etoiles = etoiles;
         this.specialites = specialites;

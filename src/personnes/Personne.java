@@ -1,14 +1,14 @@
-package Personnes;
+package personnes;
 
 public class Personne {
     private int id;
     private String nom;
     private String prenom;
     private int age;
-    private String genre;
-    private int telephone;
+    private Genre genre;
+    private String telephone;
 
-    public Personne(int id, String nom, String prenom, int age, String genre, int telephone) {
+    public Personne(int id, String nom, String prenom, int age, Genre genre, String telephone) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -49,19 +49,19 @@ public class Personne {
         this.age = age;
     }
 
-    public String getGenre() {
+    public Genre getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
-    public int getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 
