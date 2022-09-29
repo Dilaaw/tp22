@@ -30,4 +30,13 @@ public class Groupe {
         Groupe groupe = (Groupe) obj;
         return ((groupe.isBio() && isBio()) && (groupe.getCalorie() == getCalorie()) && groupe.getNom().equals(getNom()));
     }
+
+    @Override
+    public String toString() {
+        return "Groupe{" +
+                "nom=" + nom +
+                ", calorie=" + calorie +
+                ", bio=" + bio +
+                '}';
+    }
 }

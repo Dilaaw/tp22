@@ -1,14 +1,16 @@
 package personnes;
 
+import plats.Plat;
+
 import java.util.ArrayList;
 
 public class Chef extends Personne {
     private int etoiles;
-    private ArrayList<String> specialites;
-    private ArrayList<String> plats;
+    private Specialite specialites;
+    private ArrayList<Plat> plats;
     private ArrayList<Padawan> padawan;
 
-    public Chef(int id, String nom, String prenom, int age, Genre genre, String telephone, int etoiles, ArrayList<String> specialites, ArrayList<String> plats) {
+    public Chef(int id, String nom, String prenom, int age, Genre genre, String telephone, int etoiles, Specialite specialites, ArrayList<Plat> plats) {
         super(id, nom, prenom, age, genre, telephone);
         this.etoiles = etoiles;
         this.specialites = specialites;
@@ -23,19 +25,19 @@ public class Chef extends Personne {
         this.etoiles = etoiles;
     }
 
-    public ArrayList<String> getSpecialites() {
+    public Specialite getSpecialites() {
         return specialites;
     }
 
-    public void setSpecialites(ArrayList<String> specialites) {
+    public void setSpecialites(Specialite specialites) {
         this.specialites = specialites;
     }
 
-    public ArrayList<String> getPlats() {
+    public ArrayList<Plat> getPlats() {
         return plats;
     }
 
-    public void setPlats(ArrayList<String> plats) {
+    public void setPlats(ArrayList<Plat> plats) {
         this.plats = plats;
     }
 
@@ -49,7 +51,8 @@ public class Chef extends Personne {
 
     @Override
     public String toString() {
-        return "chef=" + super.toString() +
+        return "Chef{" +
+                super.toString() +
                 ", etoiles=" + etoiles +
                 ", specialites=" + specialites +
                 ", plats=" + plats +

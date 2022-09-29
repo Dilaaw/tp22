@@ -19,7 +19,7 @@ public class Padawan extends Personne{
     public String toString() {
         return "Padawan{" +
                 super.toString() +
-                "chef=" + getChef() +
+                ", " + getChef() +
                 '}';
     }
 }

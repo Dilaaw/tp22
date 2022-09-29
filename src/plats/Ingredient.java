@@ -23,12 +23,37 @@ public class Ingredient {
 
         for (Ingredient ingredient : INGREDIENTS) {
             if (ingredient.nom.equals(this.nom) && ingredient.groupeAlimentaire.equals(this.groupeAlimentaire)) {
-                throw new Exception("Cet ingrédient existe déjà !!");
+                throw new Exception("Cet ingrédient existe déjà !");
             }
         }
 
         INGREDIENTS.add(this);
     }
 
+    public static int getIdCount() {
+        return idCount;
+    }
 
+    public static void setIdCount(int idCount) {
+        Ingredient.idCount = idCount;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public Groupe getGroupeAlimentaire() {
+        return groupeAlimentaire;
+    }
+
+    @Override
+    public String toString() {
+        return "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", groupeAlimentaire=" + groupeAlimentaire;
+    }
 }
